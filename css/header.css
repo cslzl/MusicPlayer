@@ -1,0 +1,67 @@
+.header {
+    position: relative;
+    width: 300px;
+    height: 45px;
+    background: rgba(34, 34, 37, 1);
+    border-radius: 9px 9px 0 0;
+    z-index: 1;
+    border-bottom: 2px solid rgba(175, 33, 33, 1);
+}
+
+.close {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 47px;
+    height: 45px;
+}
+
+.close img {
+    width: 20px;
+    height: 20px;
+    /* 垂直水平居中套路 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    display: inline-block;
+    position: absolute;
+    width: 196px;
+    top: 50%;
+    left: 47px;
+    transform: translateY(-50%);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 8px;
+}
+
+.name {
+    color: white;
+    font-size: 16px;
+}
+.artist {
+    color: white;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.share {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 47px;
+    height: 45px;
+}
+
+.share img{
+    width: 20px;
+    height: 20px;
+    /* 垂直水平居中套路 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

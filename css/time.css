@@ -1,0 +1,60 @@
+.time-container {
+    position: relative;
+    margin: 10px 0 35px;
+}
+
+.time{
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(211, 211, 211, 0.8);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#span-current {
+    left: 15px;
+}
+
+#span-total {
+    right: 15px;
+}
+
+.slider {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+.progress-bar {
+    display: inline-block;
+    width: 180px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-bar div {
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.played {
+    left: 0;
+    width: 0%;
+    background: rgba(184, 37, 37, 1);
+}
+
+.not-played {
+    right: 0;
+    width: 100%;
+    background: rgba(211, 211, 211, 0.8);
+}

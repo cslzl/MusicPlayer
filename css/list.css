@@ -1,0 +1,31 @@
+.music-list {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    background: rgb(243, 243, 243);
+    transform-origin: bottom;
+    transform: scale(1, 0);
+    transition: 0.3s;
+}
+
+.list-item {
+    height: 36px;
+    padding: 0 0 0 10px;
+}
+
+.list-item-name {
+    position: relative;
+    top: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.list-item-img {
+    position: relative;
+    top: 9px;
+    width: 14px;
+}
+
+.list-item + .list-item {
+    border-top: 1px solid rgb(232, 232, 232)
+}

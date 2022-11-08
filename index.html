@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>MusicPlayer</title>
+        <link rel="stylesheet" href="css/player.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/disk.css">
+        <link rel="stylesheet" href="css/panel.css">
+        <link rel="stylesheet" href="css/non-controls.css">
+        <link rel="stylesheet" href="css/controls.css">
+        <link rel="stylesheet" href="css/time.css">
+        <link rel="stylesheet" href="css/list.css">
+    </head>
+    <body>
+        <div class="player">
+            <audio id='audio-player'></audio>
+            <img class="background" src="img/main/background.jpg" alt="">
+            <!-- 标题栏 -->
+            <div class="header">
+                <div class="close">
+                    <img src="img/main/close.png">
+                </div>
+                <div class="title">
+                    <div class="name"></div>
+                    <div class="artist"></div>
+                </div>
+                <div class="share">
+                    <img src="img/main/share1.png">
+                </div>
+            </div>
+            <!-- 唱片 -->
+            <div class="disk">
+                <img class="platter" src="img/main/disk1.png">
+                <img class="needle" src="img/main/disk2.png">
+            </div>
+            <!-- 控制面板 -->
+            <div class="panel">
+                <div class="non-controls">
+                    <img id="button-like" data-selected="n" src="img/non-controls/like1.png">
+                    <img id="button-download" src="img/non-controls/download1.png">
+                    <img id="button-comment" src="img/non-controls/comment1.png">
+                    <img id="button-detail" src="img/non-controls/detail1.png">
+                </div>
+                <div class="time-container">
+                    <div id="span-current" class="time">00:00</div>
+                    <div class="progress-bar">
+                        <div class="played"></div>
+                        <div class="not-played"></div>
+                    </div>
+                    <img class="slider" src="img/main/slider.png">
+                    <div id="span-total" class="time">00:00</div>
+                </div>
+                <div class="controls">
+                    <img id="button-cycle" data-cycle="list" src="img/controls/cycle_list1.png">
+                    <img id="button-previous" src="img/controls/previous1.png">
+                    <img id="button-play" data-feature="play" data-mousedown="false" src="img/controls/play1.png">
+                    <img id="button-next" src="img/controls/next1.png">
+                    <img id="button-list" src="img/controls/list1.png">
+                </div>
+            </div>
+            <!-- 音乐列表 -->
+            <div class="music-list"></div>
+        </div>
+
+        <script src="js/MusicList.js"></script>
+        <script src="js/Tools.js"></script>
+        <script src="js/UpdatePlayProgress.js"></script>
+        <script src="js/CutMusic.js"></script>
+        <script src="js/BindEvents.js"></script>
+        <script src="js/Player.js"></script>
+    </body>
+</html>

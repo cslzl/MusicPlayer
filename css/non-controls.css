@@ -1,0 +1,9 @@
+.non-controls {
+    text-align: center;
+}
+
+.non-controls img {
+    width: 43px;
+    height: 43px;
+    margin: 0 5px;
+}

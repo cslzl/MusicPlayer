@@ -1,0 +1,37 @@
+.hide {
+    display: none;
+}
+
+body {
+    background: #515151;
+}
+
+.player {
+    width: 300px;
+    height: 500px;
+    margin: 70px auto;
+    box-shadow: 6px 8px 26px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.goodbye {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* 移动适配 */
+@media all and (max-width: 400px) {
+    body {
+        margin: auto;
+    }
+    .player{
+        margin: 15px auto;
+    }
+}
